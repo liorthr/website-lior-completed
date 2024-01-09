@@ -47,7 +47,7 @@ html, body {
 }
 
 .header-container .navbar-brand img {
-    width: 10em;
+    margin-left: 2em;
 }
 
 .items {
@@ -65,63 +65,10 @@ html, body {
     line-height: normal;
 }
 
-.presentation {
-    background-color: #013020; /* Fully opaque green background */
-    position: relative;
-    overflow: hidden;
+@include media-breakpoint-down(md) {
+    .header-container .navbar-brand img {
+        margin-left: 0;
+    }
 }
 
-.presentation::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(../assets/pictures/home-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    opacity: 0.5; /* 50% transparency for the background image */
-    z-index: 1;
-}
-
-.text-download-image, .presentation .text-downloads img, .presentation .app-image img {
-    position: relative;
-    z-index: 2;
-}
-
-
-.presentation .text-downloads h1 {
-    font-size: 5em;
-    width: 70%;
-    color: white;
-    line-height: 1.2em;
-    font-family: 'Outfit';
-    font-size: 5em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.text-download-image {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 2em;
-
-}
-
-.presentation .text-downloads img {
-    width: 10em;
-    height: 10em;
-    margin: 1em;
-}
-
-.presentation .app-image {
-    padding-top: 2em;
-}
-
-.presentation .app-image img {
-    width: 17em;
-}
+@import './presentation.scss';
