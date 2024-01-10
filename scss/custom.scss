@@ -75,98 +75,22 @@ html, body {
     box-shadow: none;
 }
 
+.navbar-toggler-icon {
+    background-image: none;
+}
+
 @include media-breakpoint-down(md) {
     .header-container .navbar-brand img {
         margin-left: 0;
     }
 }
 
+.nav-link {
+    color: white;
+}
+.navbar-nav .nav-item .active-nav-link {
+    color: #FFAE42
+}
+
 @import './presentation.scss';
-
-
-
-.domaine-expertise a {
-    color: #686868;
-    font-size: 18px;
-    letter-spacing: 0;
-    text-decoration: none;
-    pointer-events: none;
- 
- }
- 
- 
- .expertise-presentation .expertise {
-     background-color: #F4F0EE;
-     border-radius: 30px;
-     display: flex;
-     align-items: center;
-     flex-direction: row;
-     padding: 10px
- }
- 
- .expertise-presentation .card.expertise {
-    background-color: white;
- }
- .expertise-presentation .card img {
-     width: 50px;
-     margin-left: 20px;
-  }
- 
-  .expertise-presentation .card .card-body {
-     display: flex;
-  }
- 
-  .expertise-presentation .card .card-body p {
-     width: 70%;
-     font-size: 13px;
-     margin-left: 20px;
-     margin-top: 10px;
-  }
- 
- 
-  .button_row {
-     margin-top: 1em;
-     margin-bottom: 3em;
-  }
- 
-  @include media-breakpoint-up(md) { 
- 
-     .expertise-presentation .expertise {
-         background-color: #F4F0EE;
-         border-radius: 30px;
-         display: block !important;
-     }
-     .expertise-presentation .card img {
-         width: 63px;
-         display: block;
-         margin-left: auto !important;
-         margin-right: auto;
-         padding-top: 5em;  
-      }
-     
-      .expertise-presentation .card .card-body {
-         display: flex;
-         justify-content: center;
-      }
-     
-      .expertise-presentation .card .card-body p {
-         width: 70%;
-         margin-top: 3em !important;
-         margin-bottom: 3em !important;
-         font-size: 16px !important;
-         text-align: center !important;
-         margin-left: 0px !important;
-      }
-     
-      .expertise-presentation .card .card-body #break {
-         width: 60%;
-      }
-     
-      .button_row {
-         margin-top: 1em;
-         margin-bottom: 3em;
-      }
- 
-  }
-
-  
+@import './about-us.scss';
