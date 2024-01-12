@@ -93,16 +93,6 @@
         width: 8em;
         height: 8em;
     }
-}
-
-
-@include media-breakpoint-down(sm) {
-
-    .presentation .text-downloads h1 {
-
-        text-align: center;
-        font-size: 3.5em;
-    }
     .presentation #icon-arrow {
         position: relative;
         z-index: 2;
@@ -115,5 +105,15 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1em;
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+
+    .presentation .text-downloads h1 {
+
+        text-align: center;
+        font-size: 3.5em;
     }
 }
