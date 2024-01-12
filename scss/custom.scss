@@ -46,10 +46,21 @@ $enable-cssgrid: true;
 
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth ;
 }
 
 .header-container {
     padding:0;
+}
+
+.header-container .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-container .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .header-container .navbar-brand img {
