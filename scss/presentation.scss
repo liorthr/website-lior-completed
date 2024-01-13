@@ -1,0 +1,119 @@
+.presentation {
+    background-color: #013020; /* Fully opaque green background */
+    position: relative;
+    overflow: hidden;
+}
+
+.presentation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/pictures/home-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.5; /* 50% transparency for the background image */
+    z-index: 1;
+}
+
+.text-download-image, .presentation .text-downloads img, .presentation .app-image img {
+    position: relative;
+    z-index: 2;
+}
+
+
+.presentation .text-downloads h1 {
+    font-size: 5em;
+    width: 70%;
+    color: white;
+    line-height: 1.2em;
+    font-family: 'Outfit';
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-download-image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+
+}
+
+.presentation .text-downloads img {
+    width: 10em;
+    height: 10em;
+    margin: 1em;
+}
+
+.presentation .app-image {
+    padding-top: 2em;
+}
+
+.presentation .app-image img {
+    width: 17em;
+}
+
+.presentation #icon-arrow {
+    display: none;
+
+}
+
+@include media-breakpoint-down(md) {
+
+    .presentation .app-image img {
+        display: none;
+    }
+
+    .presentation .text-download-image .text-downloads .text-slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+
+    }
+    .presentation .text-downloads h1 {
+
+        text-align: center;
+        font-size: 4em;
+        width: 100%;
+    }
+
+    .presentation .button-downloads {
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentation .text-downloads img {
+        width: 8em;
+        height: 8em;
+    }
+    .presentation #icon-arrow {
+        position: relative;
+        z-index: 2;
+        width: 2em;
+        background-color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-radius: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+
+    .presentation .text-downloads h1 {
+
+        text-align: center;
+        font-size: 3.5em;
+    }
+}

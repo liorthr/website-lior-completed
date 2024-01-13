@@ -1,0 +1,49 @@
+.about-us .cards-row {
+    padding-top: 3em;
+    padding-bottom: 3em;    
+}
+
+.about-us .card {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    background-color: #EFF7F4;
+    border: 1px solid #758D85
+}
+
+.about-us .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .card-body p {
+    font-family: "Sf-Pro-Display";
+    font-size: 1em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.about-us .card-body #text-icon-recycling {
+    width: 30%;
+}
+
+.about-us .card-body #text-icon-money {
+    width: 35%;
+}
+
+.about-us .card-body #text-icon-surprised {
+    width: 60%;
+}
+
+.about-us .card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.about-us .card img {
+    width: 4em;
+}
