@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 
     
 }
@@ -24,7 +25,7 @@
 .app-functions .text {
     width: 50%;
     margin-top: 5em;
-    padding-left: 10em;
+    padding-left: 5em;
 }
 
 .app-functions .text h1 {

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateSlide(index) {
         slides.forEach((slide, i) => {
-            slide.style.display = i === index ? 'flex' : 'none';
+            slide.style.display = i === index ? '' : 'none';
         });
     }
 
