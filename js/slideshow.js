@@ -15,11 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
         prevButton.addEventListener('click', function() {
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
             updateSlide(currentIndex);
+            slides[currentIndex].classList.remove('w3-animate-left');
+            slides[currentIndex].classList.add('w3-animate-right');
         });
 
         nextButton.addEventListener('click', function() {
             currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
             updateSlide(currentIndex);
+            slides[currentIndex].classList.remove('w3-animate-right');
+            slides[currentIndex].classList.add('w3-animate-left');
         });
     });
 
