@@ -80,6 +80,38 @@
     cursor: pointer;
 }
 
+.animate-left {
+    position: relative;
+    animation: animateleft 1s;
+}
+
+.animate-right {
+    position: relative;
+    animation: animateright 1s
+}
+@keyframes animateleft {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+    
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animateright {
+    0% {
+        right: -300px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
 @include media-breakpoint-down(lg) {
 
     .app-container {
