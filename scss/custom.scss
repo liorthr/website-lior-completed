@@ -96,6 +96,8 @@ html, body {
     background-image: none;
 }
 
+
+
 @include media-breakpoint-down(md) {
     .header-container .navbar-brand img {
         margin-left: 0;
@@ -120,3 +122,4 @@ html, body {
 @import './utilisation.scss';
 @import './partners.scss';
 @import './faq.scss';
+@import './cookie-consent.scss'
