@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="./js/header.js"></script>
+    <script src="./js/faq.js"></script>
+    <script src="./js/slideshow.js"></script>
 
     
 
@@ -105,9 +107,60 @@
     </section>
 
     <section class="app-functions-section">
-        <div class="container-fluid" style="background-color: #013020; height: 300px;">
-            <div class="container-md app-functions">
-            </div> 
+        <div class="container-fluid app-container">
+            <div class="container-xl app-functions">
+                <!-- Slide 1 -->
+                <div class="slide" id="slide-1">
+                    <div class="mockup-photo">
+                        <img src="./assets/pictures/mockup-1.png" alt="Mockup 1" id="mockup1" />
+                    </div>
+                    <div class="text">
+                        <h1>How does it work ?</h1>
+                        <h2>Step 1</h2>
+                        <div class="h3-text">
+                            <h3 id="mockup-text-1">Create your account and search for the best surprise boxes near you.</h3>
+                        </div>
+                        <div class="arrows-slideshow">
+                            <img class="prevButton" src="./assets/icons/arrow-lefft-slideshow.svg"></img>
+                            <img class="nextButton" src="./assets/icons/arrow-right-slideshow.svg"></img>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide" id="slide-2" style="display: none;">
+                    <div class="mockup-photo">
+                        <img src="./assets/pictures/mockup-2.png" alt="Mockup 2" id="mockup2" />
+                    </div>
+                    <div class="text">
+                        <h1>How does it work ?</h1>
+                        <h2>Step 2</h2>
+                        <div class="h3-text">
+                            <h3 id="mockup-text-2">Hop! you have found your happiness. Book your mystery box quickly before there are more. Pay safely via the application.</h3>
+                        </div>
+                            <div class="arrows-slideshow">
+                            <img class="prevButton" src="./assets/icons/arrow-lefft-slideshow.svg"></img>
+                            <img class="nextButton" src="./assets/icons/arrow-right-slideshow.svg"></img>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide" id="slide-3" style="display: none;">
+                    <div class="mockup-photo">
+                        <img src="./assets/pictures/mockup-3.png" alt="Mockup 3" id="mockup3" />
+                    </div>
+                    <div class="text">
+                        <h1>How does it work ?</h1>
+                        <h2>Step 3</h2>
+                        <div class="h3-text">
+                            <h3 id="mockup-text-3">It’s Finish!! , go to your merchant at the times indicated on your reservation message.</h3>
+                        </div> 
+                            <div class="arrows-slideshow">
+                            <img class="prevButton" src="./assets/icons/arrow-lefft-slideshow.svg"></img>
+                            <img class="nextButton" src="./assets/icons/arrow-right-slideshow.svg"></img>
+                        </div>
+                    </div>
+                </div>            </div>
         </div>
     </section>
 
@@ -129,6 +182,39 @@
                 <img src="./assets/partners/roladin.png" alt="logo" />
                 <img src="./assets/partners/roladin.png" alt="logo" />
                 <img src="./assets/partners/roladin.png" alt="logo" />
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container-fluid faq-back">
+            <div class="container-xl faq">
+                <div class="title-section">
+                    <h1>Good to know</h1>
+                </div>
+                <div class="faq-cards">
+                    <div class="qa-card">
+                        <div class="qa-header">
+                            <div class="qa-question">How much does it cost ?</div>
+                            <div class="qa-toggle">+</div>
+                        </div>
+                        <div class="qa-answer">The app is free on iOS and Android. You can search and book boxes for free on our app. Once you book proceed to the payment of the box. The price of your mystery box is -65% of the original price. A box that initially cost 100 nis will cost 35 nis. For the same quantity and quality!</div>
+                    </div>
+                    <div class="qa-card">
+                        <div class="qa-header">
+                            <div class="qa-question">What can I find on the app ?</div>
+                            <div class="qa-toggle">+</div>
+                        </div>
+                        <div class="qa-answer">A lot of really delicious products. It can be pastry, bakery, Asian restaurant, supermarket… Basically a bit of everything you buy every day.</div>
+                    </div>
+                    <div class="qa-card">
+                        <div class="qa-header">
+                            <div class="qa-question">Does the trader provide the bag ?</div>
+                            <div class="qa-toggle">+</div>
+                        </div>
+                        <div class="qa-answer">Yes, but we advise you to bring your own. In an ecological logic it is better to bring your own bag.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
