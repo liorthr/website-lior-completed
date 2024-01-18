@@ -1,3 +1,4 @@
+
 .pro-presentation {
     display: flex;
     justify-content: center;
@@ -35,6 +36,11 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.pro-presentation .pro-pres-text button:hover {
+    background: #013020;
+
 }
 
 .pro-presentation .pro-pres-image {
@@ -121,4 +127,31 @@
     .pro-presentation .pro-pres-text {
         margin-top: 7em;
     }
+
+    .professional-gains h2 {
+        font-family: "Outfit";
+        font-size: 1.5em;
+        padding-top: 1em;
+        text-align: center;
+    
+    }
+    
+}
+
+
+.professional-gains {
+    padding-top: 5em;
+    padding-bottom: 2.3 em;
+}
+
+
+.professional-gains h2 {
+    font-family: "Outfit";
+    font-size: 2em;
+    padding-top: 2em;
+
+}
+
+.professional-gains .professional-about {
+    border-top : 1px solid #056947   
 }
