@@ -1,0 +1,117 @@
+.contact-us {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+}
+
+.contact-us .contact-image {
+    margin-top: 5em;
+}
+
+.contact-us .contact-image img {
+    border-radius: 30px;
+    height: 28em;
+}
+
+.contact-us .form-contact {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.contact-us .form-contact h1 {
+    text-align: center;
+    color: #000;
+    font-family: "Outfit";
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0.5em;
+    }
+.contact-us .form-contact input {
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.contact-us .form-contact textarea {
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 70%;
+    height: 150px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.contact-us .form-contact textarea,input::placeholder {
+    font-family: 'Sf-Pro-Display';
+    letter-spacing: 0;
+    margin-bottom: 1em;
+}
+
+.contact-us .form-contact button {
+    border-radius: 30px;
+    background: #013020;
+    color: #FFF;
+    font-family: "Outfit";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    width: 70%;
+    border: 0px solid;
+}
+
+.contact-us .form-contact button:hover {
+    background:#FFA500;
+}
+
+@include media-breakpoint-down(lg) {
+
+    .contact-us .contact-image {
+        margin-top: 9em;
+    }
+    .contact-us .contact-image img {
+        border-radius: 30px;
+        height: 20em;
+    }
+
+    .contact-us .form-contact input {
+        width: 90%;
+    }
+    
+    .contact-us .form-contact textarea {
+        width: 90%;
+    }        
+
+    .contact-us .form-contact button {
+        width: 90%;
+    }
+}
+
+@include media-breakpoint-down(md) {
+
+    .contact-us .contact-image {
+        display: none;
+    }
+
+    .contact-us .form-contact input {
+        width: 100%;
+    }
+    
+    .contact-us .form-contact textarea {
+        width: 100%;
+    }    
+    
+    .contact-us .form-contact button {
+        width: 100%;
+    }
+}
+
