@@ -1,0 +1,44 @@
+.footer {
+    font-family: 'Sf-Pro-Display';
+}
+
+.footer #logo-footer {
+    width: 20em;
+    margin-top: 1em;
+}
+.footer h5 {
+    padding-top: 20px;
+    font-family: 'Sf-Pro-Display';
+    font-weight: 700;
+
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    padding-bottom: 10px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin-right: 5px;
+    width: 30px;
+    /* Add more styling for your icons here */
+}
+
+.download-link {
+    width: 100px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer h5 {
+        padding-top: 15px;
+    }
+
+    .footer ul li {
+        padding-bottom: 5px;
+    }
+}
