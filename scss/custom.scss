@@ -68,19 +68,28 @@ html, body {
     margin-left: 2em;
 }
 
-.items {
+.items-desktop {
     flex-direction: row-reverse;
     margin-right: 10em;
+}
+
+.items-mobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .nav-item {
     padding-left: 1em;
     padding-right: 1em;
     font-family: Inter;
-    font-size: 1em;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-transform: uppercase;
+
 }
 
 .navbar-toggler,
@@ -96,6 +105,11 @@ html, body {
     background-image: none;
 }
 
+@include media-breakpoint-down(lg) {
+    .nav-item {
+        margin-bottom: 1em;
+    }
+}
 
 
 @include media-breakpoint-down(md) {
@@ -122,4 +136,9 @@ html, body {
 @import './utilisation.scss';
 @import './partners.scss';
 @import './faq.scss';
-@import './cookie-consent.scss'
+@import './cookie-consent.scss';
+@import './footer.scss';
+@import './contact-us.scss';
+
+@import './professional.scss';
+@import './steps-pro.scss';

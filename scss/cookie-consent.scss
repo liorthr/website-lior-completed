@@ -81,3 +81,16 @@
   .cookie-consent-banner__cta:last-child {
     margin-left: 16px;
   }
+
+  @include media-breakpoint-down(sm) {
+
+    .cookie-consent-banner__inner {
+      padding-left: 10px
+    }
+
+    .cookie-consent-banner__actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }

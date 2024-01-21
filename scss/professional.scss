@@ -1,0 +1,157 @@
+
+.pro-presentation {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+}
+
+.pro-presentation .pro-pres-text {
+    margin-top: 5em;
+}
+.pro-presentation .pro-pres-text h1 {
+    font-size: 5em;
+    width: 70%;
+    color: black;
+    line-height: 1.2em;
+    font-family: 'Outfit';
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.pro-presentation .pro-pres-text button {
+    margin-top: 1em;
+    border-radius: 45px;
+    background: #056947;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border: 0px;
+    color: #FFF;
+    font-family: "Outfit";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.pro-presentation .pro-pres-text button:hover {
+    background: #013020;
+
+}
+
+.pro-presentation .pro-pres-image {
+    margin-top: 4em;
+}
+.pro-presentation .pro-pres-image img {
+    width: 23em;
+    height: 33em;
+    border-radius: 30px;
+}
+
+.pro-presentation #icon-arrow {
+    display: none;
+
+}
+
+@include media-breakpoint-down(md) {
+
+    .pro-presentation {
+        background-color: #013020; /* Fully opaque green background */
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .pro-presentation::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../assets/pictures/professionnal-image-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        opacity: 0.5; /* 50% transparency for the background image */
+        z-index: 1;
+    }
+    
+     .pro-presentation .pro-pres-text {
+        position: relative;
+        z-index: 2;
+    }
+    .pro-presentation .pro-pres-image {
+        display: none;
+    }
+
+    .pro-presentation .pro-pres-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+
+    .pro-presentation .pro-pres-text h1 {
+        width: 100%;
+        font-size: 4em;
+        color: white;
+        text-align: center;
+    }
+
+    .pro-presentation .pro-pres-text button {
+        margin-top: 2em;
+    }
+
+    .pro-presentation #icon-arrow {
+        position: relative;
+        z-index: 2;
+        width: 2em;
+        background-color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-radius: 30px;
+        display: block;
+        margin-top: 1.5em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .pro-presentation .pro-pres-text {
+        margin-top: 7em;
+    }
+
+    .professional-gains h2 {
+        font-family: "Outfit";
+        font-size: 1.5em;
+        padding-top: 1em;
+        text-align: center;
+    
+    }
+    
+}
+
+
+.professional-gains {
+    padding-top: 5em;
+    padding-bottom: 2.3 em;
+}
+
+
+.professional-gains h2 {
+    font-family: "Outfit";
+    font-size: 2em;
+    padding-top: 2em;
+
+}
+
+.professional-gains .professional-about {
+    border-top : 1px solid #056947   
+}
