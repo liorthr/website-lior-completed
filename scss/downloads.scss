@@ -1,0 +1,111 @@
+.get-app-section .get-app-download {
+    background-color: white;
+
+}
+
+.get-app {
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.get-app .get-app-text h1 {
+    font-family: "Outfit";
+    font-size: 7em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.get-app .downloads-icon-stores img {
+    width: 15em;
+}
+
+.get-app-section .download .mock-up img {
+    width: 25em;
+}
+
+.get-app-section .mockup-text {
+    background: linear-gradient(
+        to top,
+        #013020 0%,
+        #013020 80%,
+        white 80%,
+        white 100%
+    );
+}
+
+.get-app-section .download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+.get-app-section .download .text {
+    margin-top: 10em;
+}
+
+.get-app-section .download .text h2 {
+    color: #FFF;
+    font-family: "Outfit";
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 70%;
+    margin-bottom: 1em;
+}
+
+.get-app-section .download .text h3 {
+    color: #FFF;
+    font-family: "Sf-Pro-Display";
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 70%;
+}
+
+@include media-breakpoint-down(md) {
+    .get-app .get-app-text h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .get-app .downloads-icon-stores img {
+        width: 10em;
+    }
+
+    .get-app-section .download {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .get-app-section .download .mock-up img {
+        width: 20em;
+    }
+    
+    .get-app-section .download .text {
+        margin-top: 5em;
+    }
+
+    .get-app-section .download .text h2 {
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .get-app-section .download .text h3 {
+        font-size: 2em;
+        width: 100%;
+        text-align: center;
+    }
+    
+
+}
