@@ -31,7 +31,7 @@
     }
 .contact-us .form-contact input {
     border-radius: 20px;
-    border: 1px solid #000;
+    border: 1px solid #b4b3b3;
     background: #FFF;
     width: 70%;
     height: 50px;
@@ -41,12 +41,13 @@
 
 .contact-us .form-contact textarea {
     border-radius: 20px;
-    border: 1px solid #000;
+    border: 1px solid #b4b3b3;
     background: #FFF;
     width: 70%;
     height: 150px;
     margin-bottom: 1em;
     padding-left: 1em;
+    resize: none;
 }
 
 .contact-us .form-contact textarea,input::placeholder {
