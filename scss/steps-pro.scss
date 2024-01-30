@@ -3,6 +3,7 @@
     background-color: #F79501;
     padding-top: 7em;
     padding-bottom: 7em;
+
 }
 
 .text-join h2 {
@@ -21,6 +22,8 @@
 video {
     width: 25em;
     outline: none;
+    clip-path: inset(1px 1px);
+
 }
 
 video:focus {
@@ -30,9 +33,9 @@ video:focus {
 video {
     outline: none;
     border: none;
+    clip-path: inset(1px 1px);
+
 }
-
-
 
 @include media-breakpoint-down(lg) {
     .text-join h2 {
