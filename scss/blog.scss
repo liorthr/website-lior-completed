@@ -8,7 +8,7 @@
     font-weight: 700;
 }
 
-.card-blog {
+ .card-blog {
     width: 20em;
     height: 15em;
     position: relative;
@@ -21,7 +21,7 @@
     scroll-snap-align: start;
   }
 
-  .card-body {
+  .card-blog .card-body {
     background-color: #FFAE42;
     position:absolute;
     bottom: 0;
