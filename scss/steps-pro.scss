@@ -1,107 +1,57 @@
 
 .steps-working {
-    background-color: #013020;
-}
-
-.steps {
-    padding-top: 4em;
-    padding-bottom: 3em;
-    display: flex;
-    margin-left: 15em;
-}
-
-.title-steps {
-    display: flex;
-    justify-content: center;
-    padding-top: 3em;
-    padding-bottom: 2em;
-
+    background-color: #F79501;
+    padding-top: 7em;
+    padding-bottom: 7em;
 
 }
-.title-steps h1 {   
-    font-family: 'Sf-Pro-Display';
+
+.text-join h2 {
+    font-family: "Outfit";
+    font-size: 6em;
     font-weight: 700;
     color: white;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    position: relative;
-    display: inline-block;
+    margin-top: 2em;
+
 }
-
-.title-steps h1::before {
-    content: "";
-    position: absolute;
-    bottom: -10px; /* Adjust the space between text and underline */
-    left: 50%; /* Center the underline */
-    transform: translateX(-50%); /* Center the underline */
-    width: 50%; /* Adjust the width as needed */
-    border-bottom: 3px solid #FFA500;
-  }
-
-.step {
+.video-pro {
     display: flex;
-    align-items: center;
-    margin-bottom: 5em; /* Space between steps */
+    justify-content: center;
+}
+
+video {
+    width: 25em;
+    outline: none;
+    clip-path: inset(1px 1px);
 
 }
 
-.step-number {
-    min-width: 30px; /* Ensure the circle size is consistent */
-    height: 30px;
-    background-color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px; /* Align the number vertically */
-    margin-right: 30px; /* Space between number and text */
-    z-index: 2;
+video:focus {
+    outline: none;
 }
 
-.step-text {
-    color: #fff; /* Text color */
-    font-weight: bold;
-    font-family: "Outfit";
-    font-size: 2em;
+video {
+    outline: none;
+    border: none;
+    clip-path: inset(1px 1px);
+
 }
 
-/* Vertical line */
-.step::after {
-    content: '';
-    position: absolute;
-    left: 15px; /* Adjust to center the line with the step-number */
-    height: -webkit-fill-available;
-    border-left: 2px solid #ffa500;
-    z-index: 1;
-}
-
-/* Remove line after the last item */
-.step:last-child::after {
-    display: none;
-}
-
-/* Adjust the positioning of the steps-bar and line */
-.steps-bar {
-    position: relative;
-}
-
-/* Style for the active step */
-.step.active .step-number {
-    background-color: #ffa500; /* Orange background for active step */
-    color: #fff; /* White text color for active step */
-}
-
-#last-step {
-    margin-bottom: 0;
-}
-
-@include media-breakpoint-down(md){
-    .steps {
-        margin-left: 0;
-        justify-content: center;
+@include media-breakpoint-down(lg) {
+    .text-join h2 {
+        margin-top: 0;
+        font-size: 4em;
+        text-align: center;
     }
 
-    .step-text {
+    .video-mock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+    }
 
-        font-size: 1.5em;
+    video {
+        width: 20em;
     }
 }

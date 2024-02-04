@@ -1,0 +1,51 @@
+.recipes {
+    padding-top: 5em;
+}
+
+.recipes h2 {
+    margin-bottom: 1em;
+    font-family: "Sf-Pro-Display";
+    font-weight: 700;
+}
+
+ .card-blog {
+    width: 20em;
+    height: 15em;
+    position: relative;
+    border-radius: 30px;
+    border: 0px;
+    align-items: center;
+
+    display: flex;
+    flex: 0 0 20em;
+    scroll-snap-align: start;
+  }
+
+  .card-blog .card-body {
+    background-color: #FFAE42;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+  
+  }
+
+  .scrolling-wrapper {
+    display: flex;
+    gap: 30px;
+    height: 420px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-bottom: 100px;
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+#recipe1 {
+    background-image: url(./../assets/pictures/vegan-tofu-pancakes-with-fruits-white-plate.jpg);
+    background-size: cover;
+    background-position: bottom;
+}

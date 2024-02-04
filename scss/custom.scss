@@ -42,7 +42,7 @@ $enable-cssgrid: true;
 // Import font
 @font-face {
     font-family: 'Sf-Pro-Display';
-    src: url(./../assets/fonts/SF-Pro-Display-Regular.otf) format('truetype');
+    src: url(../assets/fonts/SF-Pro-Display-Regular.otf) format('truetype');
 }
 
 html, body {
@@ -142,3 +142,6 @@ html, body {
 
 @import './professional.scss';
 @import './steps-pro.scss';
+
+@import './downloads.scss';
+@import './blog.scss';
