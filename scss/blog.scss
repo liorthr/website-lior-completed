@@ -1,11 +1,26 @@
-.recipes {
+.recipes,.tips,.newsletter {
     padding-top: 5em;
 }
 
+.newsletter  {
+  padding-bottom: 5em;
+}
 .recipes h2 {
     margin-bottom: 1em;
     font-family: "Sf-Pro-Display";
     font-weight: 700;
+}
+
+.tips  h2 {
+  margin-bottom: 1em;
+  font-family: "Sf-Pro-Display";
+  font-weight: 700;
+}
+
+.newsletter  h2 {
+  margin-bottom: 1em;
+  font-family: "Sf-Pro-Display";
+  font-weight: 700;
 }
 
  .card-blog {
@@ -37,7 +52,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    margin-bottom: 100px;
+    height: fit-content;
   }
 
   .scrolling-wrapper::-webkit-scrollbar {
@@ -45,7 +60,20 @@
   }
 
 #recipe1 {
-    background-image: url(./../assets/pictures/vegan-tofu-pancakes-with-fruits-white-plate.jpg);
+    background-image: url(./../assets/pictures/pancakes.jpg);
     background-size: cover;
     background-position: bottom;
 }
+
+#tips1 {
+  background-image: url(./../assets/pictures/tips.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+#newsletter1 {
+  background-image: url(./../assets/pictures/newsletter.png);
+  background-size: cover;
+  background-position: top;
+}
+

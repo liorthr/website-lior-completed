@@ -1,0 +1,48 @@
+.img-back {
+    background-image: url(./../assets/pictures/pancakes.jpg);
+    background-size: cover;
+    height: 25em;
+}
+
+.article-content {
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+.article-content .artictle-title {
+    font-family: 'Sf-Pro-Display';
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+.article-content .artictle-subtitle {
+    font-family: 'Sf-Pro-Display';
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.article-content .artictle-paragraph {
+    font-family: 'Sf-Pro-Display';
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.more-article {
+    padding-bottom: 5em;
+}
+
+
+.more-article h1{
+    font-family: 'Sf-Pro-Display';
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
