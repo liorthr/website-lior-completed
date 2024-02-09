@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Gather the form data
         var formData = new FormData(form);
         console.log(formData);
-
         // Perform the fetch request to the Google Apps Script Web App URL
         fetch('https://script.google.com/macros/s/AKfycbzLrr2wzXeuQQyYH1VOXw4st2jlOHxUEFVTfiwIAnUrD23gwBmn86lcg7Cf1XdObKc/exec', {
             method: 'POST',
@@ -17,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(() => {
         form.reset();        
     }).catch(error => {
+        alert('Something went wrong, please try again later!')
         console.error('Error:', error);
         // Handle any errors that occur during fetch
     });

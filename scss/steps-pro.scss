@@ -37,8 +37,48 @@ video {
     outline: none;
     border: none;
     clip-path: inset(1px 1px);
-
 }
+
+.video-pro .contact-pro {
+    margin-top: 1.5em;
+    border-radius: 45px;
+    background: #fff;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border: 0px;
+    color: black;
+    font-family: "Outfit";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+
+.video-pro a {
+    text-decoration: none;
+}
+.video-pro button svg {
+    margin-right: 3px;
+    transform: rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .video-pro button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.video-pro button:hover svg {
+    transform: translateX(5px) rotate(30deg);
+  }
+  
+  .video-pro button:hover span {
+    transform: translateX(7px);
+  }
 
 @include media-breakpoint-down(lg) {
     .text-join h2 {
