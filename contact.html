@@ -52,7 +52,13 @@
                     <input name="senderName" placeholder="Full Name" type="text" required />
                     <input name="senderEmail" placeholder="Email" type="email" required />
                     <input  name="senderPhone" placeholder="Phone number" type="tel" required />
+                    <select name="status" required>
+                        <option disabled="disabled" selected="selected">Select one option</option>
+                        <option value="professionel">I am a professional</option>
+                        <option value="client">I am a customer</option>
+                      </select>
                     <textarea name="messageText" placeholder="Your message" required></textarea> <br >
+
                     <button type="submit">Send</button>
                 </form>
 
