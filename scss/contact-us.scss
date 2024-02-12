@@ -39,6 +39,32 @@
     padding-left: 1em;
 }
 
+.contact-us .form-contact select {
+    border-radius: 20px;
+    border: 1px solid #b4b3b3;
+    background: #FFF;
+    width: 70%;
+    height: 50px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    font-family: 'Sf-Pro-Display';
+    letter-spacing: 0;
+    color: #757575;
+}
+.contact-us .form-contact option {
+    font-family: 'Sf-Pro-Display';
+    letter-spacing: 0;
+    color: black;
+}
+
+.contact-us .form-contact option:disabled {
+    font-family: 'Sf-Pro-Display';
+    letter-spacing: 0;
+    color: #757575;
+}
+
+
+
 .contact-us .form-contact textarea {
     border-radius: 20px;
     border: 1px solid #b4b3b3;
@@ -87,6 +113,10 @@
 
     .contact-us .form-contact input {
         width: 90%;
+    }
+
+    .contact-us .form-contact select {
+        width: 100%;
     }
     
     .contact-us .form-contact textarea {
