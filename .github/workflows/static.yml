@@ -33,9 +33,9 @@ jobs:
       - name: FTP Deploy to o2switch
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          ftp-server: ${{ secrets.FTP_TARGET_HOST }}  # Remplacez par votre serveur SFTP o2switch
-          ftp-username: ${{ secrets.O2SWITCH_FTP_USERNAME }}   # Nom d'utilisateur SFTP stocké en tant que secret GitHub
-          ftp-password: ${{ secrets.O2SWITCH_FTP_PASSWORD }}   # Mot de passe SFTP stocké en tant que secret GitHub
+          server: ${{ secrets.FTP_TARGET_HOST }}  # Remplacez par votre serveur SFTP o2switch
+          username: ${{ secrets.O2SWITCH_FTP_USERNAME }}   # Nom d'utilisateur SFTP stocké en tant que secret GitHub
+          password: ${{ secrets.O2SWITCH_FTP_PASSWORD }}   # Mot de passe SFTP stocké en tant que secret GitHub
           local-dir: ./   # Dossier local contenant les fichiers à déployer
           git-ftp-args: --insecure   # Utilisez cette option si nécessaire
 
