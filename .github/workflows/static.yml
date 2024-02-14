@@ -39,13 +39,3 @@ jobs:
           local-dir: ./   # Dossier local contenant les fichiers à déployer
           git-ftp-args: --insecure   # Utilisez cette option si nécessaire
 
-  # Le job Lighthouse CI peut rester inchangé si vous souhaitez toujours l'exécuter
-  lighthouseci:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm install -g @lhci/cli@0.12.x
-      - run: lhci autorun
