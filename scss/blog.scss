@@ -61,10 +61,22 @@
     display: none; /* for Chrome, Safari, and Opera */
   }
 
+  .card-blog:hover .card-body {
+    height: 100%; /* Full height on hover */
+  }
+
+
+
 #recipe1 {
     background-image: url(./../assets/pictures/pancakes.jpg);
     background-size: cover;
     background-position: bottom;
+}
+
+#recipe2 {
+  background-image: url(./../assets/pictures/crepe.jpeg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 #tips1 {
@@ -79,6 +91,4 @@
   background-position: top;
 }
 
-.card-blog:hover .card-body {
-  height: 100%; /* Full height on hover */
-}
+
