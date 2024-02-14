@@ -1,5 +1,5 @@
 # Workflow adapté pour déployer le contenu statique sur o2switch
-name: Deploy static content to o2switch.
+name: Deploy static content to o2switch
 
 on:
   # Se déclenche pour les push sur la branche principale
