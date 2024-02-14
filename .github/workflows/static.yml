@@ -37,5 +37,6 @@ jobs:
           username: ${{ secrets.O2SWITCH_FTP_USERNAME }}   # Nom d'utilisateur SFTP stocké en tant que secret GitHub
           password: ${{ secrets.O2SWITCH_FTP_PASSWORD }}   # Mot de passe SFTP stocké en tant que secret GitHub
           local-dir: ./   # Dossier local contenant les fichiers à déployer
+          server-dir: /
           git-ftp-args: --insecure   # Utilisez cette option si nécessaire
 
